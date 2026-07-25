@@ -2,7 +2,7 @@
 name = "optimon"
 version = "0.1.0"
 edition = "2021"
-description = "Concurrent monitoring daemon for NVIDIA Optimus laptops on Ubuntu"
+description = "Concurrent monitoring daemon for NVIDIA Optimus laptops on Linux"
 license = "MIT"
 
 [dependencies]
