@@ -1,0 +1,17 @@
+# optimon configuration
+
+[general]
+# Log verbosity: "trace", "debug", "info", "warn", "error".
+log_level = "info"
+
+[gpu]
+# How often to poll GPU state, in seconds.
+poll_interval_secs = 4
+# Minimum temperature delta (°C) required before a change is logged.
+temp_threshold_c = 3
+# Minimum utilization delta (%) required before a change is logged.
+util_threshold_pct = 10
+
+[display]
+# How often to poll connected displays, in seconds.
+poll_interval_secs = 4

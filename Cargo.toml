@@ -1,0 +1,20 @@
+[package]
+name = "optimon"
+version = "0.1.0"
+edition = "2021"
+description = "Concurrent monitoring daemon for NVIDIA Optimus laptops on Ubuntu"
+license = "MIT"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+nvml-wrapper = "0.10"
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+anyhow = "1"
+thiserror = "1"
+
+[profile.release]
+lto = true
+codegen-units = 1
